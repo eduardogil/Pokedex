@@ -1,0 +1,130 @@
+/* Buttons */
+
+.button-actions {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    display: grid;
+    grid-template-columns: 25% 25% 15% 35%;
+    grid-template-rows: 10% 80% 10%;
+  }
+  
+.pokedex-button {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.sorte-button {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.actions {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.actions .button-play {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #404040;
+    border: 5px solid #303030;
+    cursor: pointer;
+}
+.actions .button-play:active{
+    background: #606060;
+}
+  
+.cursor {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.cursor-button {
+    background-color: #404040;
+    border: #303030;
+    color: red;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.cursor-button:active{
+    background: #606060;
+}
+
+.up {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    border-width: 5px 5px 0px 5px;
+}
+.right {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    border-width: 5px 0px 5px 5px;
+}
+.down {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    border-width: 0px 5px 5px 5px;
+}
+.left {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    border-width: 5px 5px 5px 0px;
+}
+.center {
+    background: #303030;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    box-sizing: border-box;
+    border-width: 5px 5px 5px 5px;
+}
+.bottom-button {
+    grid-row-start: 5;
+    grid-column-start: 4;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 50% 40%;
+}
+      
+.black-button {
+    background-color: #404040;
+    border: #303030 5px solid;
+    color: gray;
+    cursor: pointer
+}
+.black-button:active{
+    background: #606060;
+}
+      
+.sensor button {
+    cursor: pointer;
+    background: rgb(76, 194, 245);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 1px;
+    z-index:3;
+    float: left;
+    margin-left: 1px;
+    border: 6px double #EFEFEF;
+  }
+  
+.idPokemon{
+    height: 15px;
+    outline: none;
+    
+}
+.idPokemon[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.idPokemon[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

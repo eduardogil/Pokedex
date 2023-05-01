@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="css/display.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <body class="backPokemon">
+    <div class="layout" id="dadosPokemon"> 
+        <div class="sensor">
+            <button></button>
+            <div class="leds leds-red">
+            
+            <div class="leds leds-yellow">
+           
+            <div class="leds leds-green">
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="display">
+        <img src="./img/pokebola.png" class="img"/>
+        <h3 class="nome"></h3>
+        </div>
+        <div class="divisor">
+            <div class="col"></div>
+        </div>
+        <div class="stats-display">
+            <h3 class="id"></h3>
+            <h3 class="altura"></h3>
+            <h3 class="peso"></h3>
+            <ul class="tipo">
+            </ul>
+            <ul class="estatistica">
+            </ul>
+        </div>
+        <div class="button-actions">
+        <div class="actions">
+            <button class="button-play"></button>
+        </div>
+        <div class="cursor">
+            <input type="submit" class="cursor-button up" onclick="somar(1)" value="">
+            <button class="cursor-button right" onclick="menos(10)"></button>
+            <button class="cursor-button down" onclick="menos(1)"></button>
+            <button class="cursor-button left" onclick="somar(10)"></button>
+            <div class="cursor-button center"> </div>
+        </div>
+        </div>
+        <div class="input-id">
+            <input class="idPokemon" type="number" name="id" id="id" placeholder="ID Pokémon">
+        </div><!-- 
+        <div id="erro"></div> -->
+        <div class="bottom-button">
+            <div class="erro" id="erro"></div>
+            <button class="pokedex-button black-button" onclick="validarId('id')">Pokedex</button>
+            <input type="submit" class="sorte-button black-button"id="sorte" onclick="estouComSorte()" value="Sorte">
+        </div>
+    </div>
+  <script src="./src/pokeApi.js"></script>
+  <script src="./src/pokemon.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+</html>
